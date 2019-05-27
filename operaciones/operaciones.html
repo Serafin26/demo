@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Operaciones</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="multiplicando" onchange="multiplicar();">
+		x
+		<input type="text" id="multiplicador" onchange="multiplicar();">
+		=
+		<input type="text" id="resultado">
+	</form>
+
+	<script>
+		function multiplicar()
+		{
+			var r = 0;
+			var m1 = document.getElementById("multiplicando").value;
+			var m2 = document.getElementById("multiplicador").value;
+
+			r = m1 * m2;
+
+			document.getElementById("resultado").value = r;
+
+		}
+	</script>
+</body>
+</html>
